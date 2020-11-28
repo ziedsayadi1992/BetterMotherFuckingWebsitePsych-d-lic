@@ -1,5 +1,7 @@
-This the BetterMotherFuckingWebsiteWithPopup
+This the BetterMotherFuckingWebsitePsychodelic
 
-this is the same website as BetterMotherFuckingWebsite but with popup that can direct you to the best Porn website ever
+this is the same website as BetterMotherFuckingWebsite but with added feature that made the site even better
 
-Check out this link for more information : https://ziedsayadi1992.github.io/BetterMotherFuckingWebsiteWithPopup/
+Check out the new feature by clicking on this link : 
+
+https://ziedsayadi1992.github.io/BetterMotherFuckingWebsitePsychodelic/
