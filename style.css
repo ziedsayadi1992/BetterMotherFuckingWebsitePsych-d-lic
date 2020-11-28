@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 18px;
+color: #444;
+}
+
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+
+span{
+    font-style: italic
+}
+/************* Change Background Button ****************/
+
+.bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+.bg_btn:hover{
+    background-color: magenta;
+    color: #fff;
+    box-shadow: 0 0 5px magenta;
+}
+.bg_btn .span{
+    position: absolute;
+    display: block;
+}
+.bg_btn .span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,magenta);
+    animation: animation1 1s linear infinite;
+}
+@keyframes animation1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.bg_btn .span:nth-child(2){
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,magenta);
+    animation: animation2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animation2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.bg_btn .span:nth-child(3){
+    bottom: 0%;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,magenta);
+    animation: animation3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animation3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.bg_btn .span:nth-child(4){
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,magenta);
+    animation: animation4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animation4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+
+/*******************Body Background Changing*********************/
+
+#body.active{
+    transition: all 0.5s ease-in-out;
+    background-color: magenta;
+}
+h1.active,h2.active,h3.active,h4.active{
+color: green;
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+p.active{
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*********************Query Medias**************/
+@media (max-width:600px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 14px;
+color: #444;    }
+
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 12px 18px;
+    max-width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
+
+@media (max-width:525px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 12px;
+color: #444;    }
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 8px 15px;
+    max-width: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
+
+@media (max-width:430px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 10px;
+color: #444;    }
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 8px 15px;
+    max-width: 20%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
+
+@media (max-width:424px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 12px;
+color: #444;    }
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 8px 15px;
+    max-width: 25%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
+
+@media (max-width:338px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 10px;
+color: #444;    }
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 5px 10px;
+    max-width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
+
+@media (max-width:296px){
+    body{
+margin: 2rem auto;
+max-width: 48vw;
+line-height: 1.45;
+font-size: 8px;
+color: #444;    }
+    .bg_btn{
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    padding: 5px 10px;
+    max-width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+}
